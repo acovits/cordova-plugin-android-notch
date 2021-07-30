@@ -20,18 +20,16 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-android-notch"
-    version="1.0.0">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-android-notch" version="1.0.0">
     <name>AndroidNotch</name>
     <description>Cordova AndroidNotch Plugin</description>
     <license>MIT</license>
     <keywords>cordova,android,notch</keywords>
     <engines>
-            <engine name="cordova" version=">=3.0.0" />
+        <engine name="cordova" version=">=3.0.0" />
     </engines>
     <js-module src="www/notch.js" name="notch">
-        <clobbers target="window.AndroidNotch" />
+        <clobbers target="cordova.plugins.androidNotch" />
     </js-module>
 
     <platform name="android">
